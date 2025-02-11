@@ -12,15 +12,14 @@
 
     <groupId>dev.ikm.jpms</groupId>
     <artifactId>protobuf-java</artifactId>
-    <version>${core.artifact.version}-${core.artifact.release}</version>
+    <version>4.30.0-RC1-r1</version>
     <packaging>jar</packaging>
     <name>Tinkar Protobuf Java</name>
     <url>https://github.com/HL7/tinkar-proto</url>
 
     <properties>
         <!-- change release here-->
-        <core.artifact.version>3.22.0</core.artifact.version>
-        <core.artifact.release>r7</core.artifact.release>
+        <core.artifact.version>4.30.0-RC1</core.artifact.version>
 
         <maven.moditect.plugin>1.2.2.Final</maven.moditect.plugin>
     </properties>
