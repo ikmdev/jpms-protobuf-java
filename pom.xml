@@ -12,14 +12,15 @@
 
     <groupId>dev.ikm.jpms</groupId>
     <artifactId>protobuf-java</artifactId>
-    <version>4.30.0-RC1-r1-SNAPSHOT</version>
+    <version>4.30.0-r1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Tinkar Protobuf Java</name>
     <url>https://github.com/HL7/tinkar-proto</url>
 
     <properties>
         <!-- change release here-->
-        <core.artifact.version>4.30.0-RC1</core.artifact.version>
+        <core.artifact.version>4.30.0</core.artifact.version>
+        <core.artifact.release>r1</core.artifact.release>
 
         <maven.moditect.plugin>1.2.2.Final</maven.moditect.plugin>
     </properties>
@@ -99,12 +100,12 @@
                         <configuration>
                             <artifacts>
                                 <artifact>
-                                    <file>${project.build.directory}/dependency/protobuf-java-${core.artifact.version}-sources.jar</file>
+                                    <file>${project.build.directory}/dependency/${project.artifactId}-${core.artifact.version}-sources.jar</file>
                                     <type>jar</type>
                                     <classifier>sources</classifier>
                                 </artifact>
                                 <artifact>
-                                    <file>${project.build.directory}/dependency/protobuf-java-${core.artifact.version}-javadoc.jar</file>
+                                    <file>${project.build.directory}/dependency/${project.artifactId}-${core.artifact.version}-javadoc.jar</file>
                                     <type>jar</type>
                                     <classifier>javadoc</classifier>
                                 </artifact>
@@ -161,8 +162,8 @@
                         <configuration>
                             <target>
                                 <echo message="renaming sources file" />
-                                <copy file="${project.build.directory}/dependency/protobuf-java-${core.artifact.version}-sources.jar"
-                                      tofile="${project.build.directory}/protobuf-java-${project.version}-sources.jar" />
+                                <copy file="${project.build.directory}/dependency/${project.artifactId}-${core.artifact.version}-sources.jar"
+                                      tofile="${project.build.directory}/${project.artifactId}-${project.version}-sources.jar" />
                             </target>
                         </configuration>
                     </execution>
@@ -175,7 +176,7 @@
                         <configuration>
                             <target>
                                 <echo message="renaming javadoc file" />
-                                <copy file="${project.build.directory}/dependency/protobuf-java-${core.artifact.version}-javadoc.jar"
+                                <copy file="${project.build.directory}/dependency/${project.artifactId}-${core.artifact.version}-javadoc.jar"
                                       tofile="${project.build.directory}/protobuf-java-${project.version}-javadoc.jar" />
                             </target>
                         </configuration>
@@ -185,7 +186,7 @@
                         <configuration>
                             <target>
                                 <echo message="unzipping file"/>
-                                <unzip src="${project.build.directory}/moditect/protobuf-java-${core.artifact.version}.jar"
+                                <unzip src="${project.build.directory}/moditect/${project.artifactId}-${core.artifact.version}.jar"
                                        dest="${project.build.directory}/classes/"/>
                             </target>
                         </configuration>
