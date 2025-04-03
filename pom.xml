@@ -12,7 +12,7 @@
 
     <groupId>dev.ikm.jpms</groupId>
     <artifactId>protobuf-java</artifactId>
-    <version>4.30.0-r2-AR-283_update-deps-SNAPSHOT</version>
+    <version>4.30.0-r2-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Tinkar Protobuf Java</name>
     <url>https://github.com/HL7/tinkar-proto</url>
