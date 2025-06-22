@@ -8,7 +8,7 @@
 <!-- ====================================================================== -->
 <!--                                                                        -->
 <!-- Effective POM for project                                              -->
-<!-- 'dev.ikm.jpms:protobuf-java:jar:4.30.0-r2-SNAPSHOT'                    -->
+<!-- 'dev.ikm.jpms:protobuf-java:jar:4.30.2-r3-SNAPSHOT'                    -->
 <!--                                                                        -->
 <!-- ====================================================================== -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -21,7 +21,7 @@
   </parent>
   <groupId>dev.ikm.jpms</groupId>
   <artifactId>protobuf-java</artifactId>
-  <version>4.30.0-r2-SNAPSHOT</version>
+  <version>4.30.2-r3-SNAPSHOT</version>
   <name>Tinkar Protobuf Java</name>
   <description>The General Parent that helps to define the build processes that should be used across projects, regardless of.
         Package type. This is versioned and if you want to use a different version of the pom, you can simply change
@@ -56,8 +56,8 @@
   </issueManagement>
   <properties>
     <build-helper-maven-plugin.version>3.6.0</build-helper-maven-plugin.version>
-    <core.artifact.release>r1</core.artifact.release>
-    <core.artifact.version>4.30.0</core.artifact.version>
+    <core.artifact.release />
+    <core.artifact.version>4.30.2</core.artifact.version>
     <java.version>23</java.version>
     <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
     <maven-license-plugin.version>4.1</maven-license-plugin.version>
@@ -131,7 +131,7 @@
       </testResource>
     </testResources>
     <directory>c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target</directory>
-    <finalName>protobuf-java-4.30.0-r2-SNAPSHOT</finalName>
+    <finalName>protobuf-java-4.30.2-r3-SNAPSHOT</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -354,13 +354,13 @@
                 <artifactItem>
                   <groupId>com.google.protobuf</groupId>
                   <artifactId>protobuf-java</artifactId>
-                  <version>4.30.0</version>
+                  <version>4.30.2</version>
                   <classifier>sources</classifier>
                 </artifactItem>
                 <artifactItem>
                   <groupId>com.google.protobuf</groupId>
                   <artifactId>protobuf-java</artifactId>
-                  <version>4.30.0</version>
+                  <version>4.30.2</version>
                   <classifier>javadoc</classifier>
                 </artifactItem>
               </artifactItems>
@@ -382,12 +382,12 @@
             <configuration>
               <artifacts>
                 <artifact>
-                  <file>c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target/dependency/protobuf-java-4.30.0-sources.jar</file>
+                  <file>c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target/dependency/protobuf-java-4.30.2-sources.jar</file>
                   <type>jar</type>
                   <classifier>sources</classifier>
                 </artifact>
                 <artifact>
-                  <file>c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target/dependency/protobuf-java-4.30.0-javadoc.jar</file>
+                  <file>c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target/dependency/protobuf-java-4.30.2-javadoc.jar</file>
                   <type>jar</type>
                   <classifier>javadoc</classifier>
                 </artifact>
@@ -415,7 +415,7 @@
                   <artifact>
                     <groupId>com.google.protobuf</groupId>
                     <artifactId>protobuf-java</artifactId>
-                    <version>4.30.0</version>
+                    <version>4.30.2</version>
                   </artifact>
                   <moduleInfoSource>module dev.ikm.jpms.protobuf {
                                             requires java.logging;
@@ -442,7 +442,7 @@
             <configuration>
               <target>
                 <echo message="renaming sources file" />
-                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target/dependency/protobuf-java-4.30.0-sources.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target/protobuf-java-4.30.0-r2-SNAPSHOT-sources.jar" />
+                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target/dependency/protobuf-java-4.30.2-sources.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target/protobuf-java-4.30.2-r3-SNAPSHOT-sources.jar" />
               </target>
             </configuration>
           </execution>
@@ -455,7 +455,7 @@
             <configuration>
               <target>
                 <echo message="renaming javadoc file" />
-                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target/dependency/protobuf-java-4.30.0-javadoc.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target/protobuf-java-4.30.0-r2-SNAPSHOT-javadoc.jar" />
+                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target/dependency/protobuf-java-4.30.2-javadoc.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target/protobuf-java-4.30.2-r3-SNAPSHOT-javadoc.jar" />
               </target>
             </configuration>
           </execution>
@@ -467,7 +467,7 @@
             <configuration>
               <target>
                 <echo message="unzipping file" />
-                <unzip src="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target/moditect/protobuf-java-4.30.0.jar" dest="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target/classes/" />
+                <unzip src="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target/moditect/protobuf-java-4.30.2.jar" dest="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-protobuf-java\target/classes/" />
               </target>
             </configuration>
           </execution>
