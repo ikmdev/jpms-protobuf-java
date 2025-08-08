@@ -22,9 +22,9 @@ jobs:
     if: github.event_name == 'pull_request'
     steps:
       - name: Pull Request Version Validation
-        uses: ikmdev/maven-pull-request-version-validation-action@v2
+        uses: ikmdev/maven-pull-request-version-validation-action@v2.1.0
 
         
   general-build-job:
     name: General Build
-    uses: ikmdev/maven-jpms-test-build-action/.github/workflows/build.yaml@v2.0.0
+    uses: ikmdev/maven-jpms-test-build-action/.github/workflows/build.yaml@v2.1.0
